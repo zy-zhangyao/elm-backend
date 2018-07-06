@@ -18,7 +18,7 @@
 				    <foods-img></foods-img>
 				</p>
 			
-				<el-form-item label="食品特点" prop="region">
+				<el-form-item label="食品特点" prop="region" class="fty">
 				    <el-select v-model="ruleForm.region"  clearable placeholder="请选择活动区域" class="move-left">
 				      <el-option label="新品" value="shanghai"></el-option>
 				      <el-option label="招牌" value="beijing"></el-option>
@@ -116,7 +116,7 @@ import FoodsFormat from "./FoodsFormat"
 }
 .move-left{
 	float:left;
-	padding-left: 10px;
+	padding-left: 5px;
 }
 .addsBtn{
 	clear:both;
@@ -127,7 +127,9 @@ import FoodsFormat from "./FoodsFormat"
 	margin-top: 10px;
 	margin-left:0px;
 }
-	
+.fty{
+	padding-top: 10px;
+}
 
 
 </style>
